@@ -100,7 +100,7 @@ int main(void)
     if(HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == GPIO_PIN_RESET)
     {
       HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
-      HAL_Delay(3000);  // better use only 3 s while testing
+      HAL_Delay(5000);  // better use only 3 s while testing
       HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
     }
     /* USER CODE END WHILE */
